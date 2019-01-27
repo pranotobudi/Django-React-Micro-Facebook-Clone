@@ -8,9 +8,10 @@ import HeaderHome from './HeaderHome';
 import HeaderFriendRequest from './HeaderFriendRequest';
 import HeaderMessage from './HeaderMessage';
 import HeaderNotification from './HeaderNotification';
+import './App.css';
 
 const HeaderContainer = () => (
-    <Row>
+    <Row className="header-color">
         <Col span={4}><HeaderBrand /></Col>
         <Col span={6}><HeaderSearch /></Col>
         <Col span={6}><HeaderProfile /></Col>
