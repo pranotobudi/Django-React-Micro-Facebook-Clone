@@ -5,15 +5,18 @@ import './index.css';
 import LeftContainer from './LeftCointainer';
 import RightContainer from './RightContainer';
 import MiddleContainer from './MiddleContainer';
+import HeaderContainer from './HeaderContainer';
 
 const {
-    Header, Footer, Content,
+    Header, Content,
   } = Layout;
 
 const MainContainer = () => (
     <Layout>
-        <Header>Header</Header>
-        <Content>Content
+        <Header>Header
+            <HeaderContainer />
+        </Header>
+        <Content>
             <Row>
                 <Col xs={2} sm={4} md={4} lg={4} xl={4}>
                     Left Container
@@ -29,7 +32,6 @@ const MainContainer = () => (
                 </Col>
             </Row>
         </Content>
-        <Footer>Footer</Footer>
     </Layout>
 
       );
