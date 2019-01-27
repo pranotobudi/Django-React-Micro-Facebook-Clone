@@ -7,31 +7,27 @@ import RightContainer from './RightContainer';
 import MiddleContainer from './MiddleContainer';
 import HeaderContainer from './HeaderContainer';
 
-const {
-    Header, Content,
-  } = Layout;
+// const {
+//     Content,
+//   } = Layout;
 
 const MainContainer = () => (
     <Layout>
-        <Header>Header
-            <HeaderContainer />
-        </Header>
-        <Content>
-            <Row>
-                <Col xs={2} sm={4} md={4} lg={4} xl={4}>
-                    Left Container
-                    <LeftContainer />
-                </Col>
-                <Col type="flex" justify="center" xs={20} sm={16} md={16} lg={16} xl={16}>
-                    Middle Container
-                    <MiddleContainer />
-                </Col>
-                <Col xs={2} sm={4} md={4} lg={4} xl={4}>
-                    Right Container
-                    <RightContainer />
-                </Col>
-            </Row>
-        </Content>
+        <HeaderContainer />
+        <Row>
+            <Col xs={2} sm={4} md={4} lg={4} xl={4}>
+                Left Container
+                <LeftContainer />
+            </Col>
+            <Col type="flex" justify="center" xs={20} sm={16} md={16} lg={16} xl={16}>
+                Middle Container
+                <MiddleContainer />
+            </Col>
+            <Col xs={2} sm={4} md={4} lg={4} xl={4}>
+                Right Container
+                <RightContainer />
+            </Col>
+        </Row>
     </Layout>
 
       );
