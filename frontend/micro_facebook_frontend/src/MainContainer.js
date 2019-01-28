@@ -15,15 +15,15 @@ const MainContainer = () => (
     <Layout>
         <HeaderContainer />
         <Row>
-            <Col xs={2} sm={4} md={4} lg={4} xl={4}>
+            <Col xs={2} sm={5} md={5} lg={5} xl={5}>
                 Left Container
                 <LeftContainer />
             </Col>
-            <Col type="flex" justify="center" xs={20} sm={16} md={16} lg={16} xl={16}>
+            <Col xs={20} sm={14} md={14} lg={14} xl={14}>
                 Middle Container
                 <MiddleContainer />
             </Col>
-            <Col xs={2} sm={4} md={4} lg={4} xl={4}>
+            <Col xs={2} sm={5} md={5} lg={5} xl={5}>
                 Right Container
                 <RightContainer />
             </Col>

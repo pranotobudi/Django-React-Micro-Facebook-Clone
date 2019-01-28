@@ -1,23 +1,28 @@
 /*eslint-disable*/
 import React from 'react';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
+import MicroFbPostHeader from './MicroFbPostHeader';
+import MicroFbPostContent from './MicroFbPostContent';
+import MicroFbPostStatistics from './MicroFbPostStatistics';
+import MicroFbPostButton from './MicroFbPostButton';
+import MicroFbPostComment from './MicroFbPostComment';
 
 const MicroFbPost = () => (
-    <div>
+    <div className="micro-fb-post">
         <div>
-            Post Header
+            <MicroFbPostHeader />
         </div>
         <div>
-            Post Content
+            <MicroFbPostContent/>
         </div>
         <div>
-            Post Statistics
+            <MicroFbPostStatistics/>
         </div>
         <div>
-            Post Button
+            <MicroFbPostButton/>
         </div>
         <div>
-            Post Comment
+            <MicroFbPostComment/>
         </div>
     </div>
       );

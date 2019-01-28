@@ -8,7 +8,7 @@ const LeftContainer = () => (
     <Card
         title="My Groups Shortcuts"
         extra={<a href="http://localhost">More</a>}
-        style={{ width: 300 }}>
+        style={{ width: 250 }}>
         <p>Django Python Web Framework</p>
         <p>React Developers</p>
         <p>Python Wordwide Community</p>

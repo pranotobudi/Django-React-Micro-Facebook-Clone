@@ -10,7 +10,7 @@ const MiddleContainer = () => (
         <Card
             title="Default size card"
             extra={<a href="http://localhost">More</a>}
-            style={{ width: 800 }}>
+            style={{ width: 750 }}>
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
@@ -18,7 +18,7 @@ const MiddleContainer = () => (
         <Card
             title="Default size card"
             extra={<a href="http://localhost">More</a>}
-            style={{ width: 800 }}>
+            style={{ width: 750 }}>
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
@@ -26,7 +26,7 @@ const MiddleContainer = () => (
         <Card
             title="Default size card"
             extra={<a href="http://localhost">More</a>}
-            style={{ width: 800 }}>
+            style={{ width: 750 }}>
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
