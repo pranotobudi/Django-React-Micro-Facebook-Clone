@@ -7,7 +7,6 @@ import LeftContainer from './LeftCointainer';
 import RightContainer from './RightContainer';
 import MiddleContainer from './MiddleContainer';
 import HeaderContainer from './HeaderContainer';
-
 // const {
 //     Content,
 //   } = Layout;
