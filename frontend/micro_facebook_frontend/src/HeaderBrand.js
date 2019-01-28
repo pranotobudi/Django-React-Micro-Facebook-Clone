@@ -8,7 +8,7 @@ import myImage from './fb-640-640-white-bg.png';
 
 const HeaderBrand = () => (
     <div>
-        <img src={myImage} width="100" height="50" alt="brandLogo" />
+        <img src={myImage} width="50" height="30" alt="brandLogo" />
     </div>
       );
 

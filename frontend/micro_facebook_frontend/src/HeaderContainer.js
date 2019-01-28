@@ -12,8 +12,8 @@ import HeaderNotification from './HeaderNotification';
 import './App.css';
 
 const HeaderContainer = () => (
-    <div>
-        <Row className="header-color">
+    <div className="header-container">
+        <Row>
             <Col span={4}><HeaderBrand /></Col>
             <Col span={6}><HeaderSearch /></Col>
             <Col span={6}><HeaderProfile /></Col>

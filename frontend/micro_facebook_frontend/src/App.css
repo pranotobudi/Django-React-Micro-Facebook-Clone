@@ -23,6 +23,16 @@
   to { transform: rotate(360deg); }
 }
 
-.header-color{
+.header-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #10239e;
+}
+
+.header-profile-text{
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: bold;
 }
