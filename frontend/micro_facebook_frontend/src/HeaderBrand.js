@@ -7,7 +7,7 @@ import myImage from './fb-640-640-white-bg.png';
 // const imageName = require('../images/fb-640-640-white-bg.png');
 
 const HeaderBrand = () => (
-    <div>
+    <div className="header-brand">
         <img src={myImage} width="50" height="30" alt="brandLogo" />
     </div>
       );

@@ -5,11 +5,11 @@ import { Input } from 'antd';
 const Search = Input.Search;
 
 const HeaderSearch = () => (
-    <div>
+    <div className="header-search">
         <Search
             placeholder="Search"
             // onSearch={value => console.log(value)}
-            style={{ width: 200 }} />
+            style={{ width: 300 }} />
     </div>
       );
 
