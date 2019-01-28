@@ -31,6 +31,15 @@
   background-color: #10239e;
 }
 
+.header-left-container{
+  display: inline-block;
+}
+
+.header-right-container{
+  display: inline-block;
+  float: right;
+}
+
 .header-brand{
   display: inline-block;
 }
@@ -39,29 +48,34 @@
   margin-left: 10px;
 }
 .header-profile-text{
-  margin-left: 10px;
   color: #ffffff;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .header-home-text{
-  margin-left: 10px;
   color: #ffffff;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .header-friend-request{
   font-size: 24px; /*used for icon size*/
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .header-message{
   font-size: 24px; /*used for icon size*/
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .header-notification{
   font-size: 24px; /*used for icon size*/
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.header-left-container{
-  display: inline-block;
-}

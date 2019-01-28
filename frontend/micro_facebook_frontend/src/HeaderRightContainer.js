@@ -10,14 +10,12 @@ import HeaderNotification from './HeaderNotification';
 import './App.css';
 
 const HeaderRightContainer = () => (
-    <div className="header-container">
-        <div>
-            <Col span={6}><HeaderProfile /></Col>
-            <Col span={2}><HeaderHome /></Col>
-            <Col span={2}><HeaderFriendRequest /></Col>
-            <Col span={2}><HeaderMessage /></Col>
-            <Col span={2}><HeaderNotification /></Col>
-        </div>
+    <div className="header-right-container">
+        <HeaderProfile />
+        <HeaderHome />
+        <HeaderFriendRequest />
+        <HeaderMessage />
+        <HeaderNotification />
         {/* <Row>
             <Col span={6}><HeaderProfile /></Col>
             <Col span={2}><HeaderHome /></Col>
