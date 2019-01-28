@@ -42,3 +42,15 @@
   color: #ffffff;
   font-weight: bold;
 }
+
+.header-friend-request{
+  font-size: 24px; /*used for icon size*/
+}
+
+.header-message{
+  font-size: 24px; /*used for icon size*/
+}
+
+.header-notification{
+  font-size: 24px; /*used for icon size*/
+}
