@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Row, Col, Layout } from 'antd';
@@ -33,3 +34,4 @@ const MainContainer = () => (
       );
 
 export default MainContainer;
+/* eslint-enable */

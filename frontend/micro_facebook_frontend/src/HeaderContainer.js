@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Row, Col } from 'antd';
@@ -11,17 +12,20 @@ import HeaderNotification from './HeaderNotification';
 import './App.css';
 
 const HeaderContainer = () => (
-    <Row className="header-color">
-        <Col span={4}><HeaderBrand /></Col>
-        <Col span={6}><HeaderSearch /></Col>
-        <Col span={6}><HeaderProfile /></Col>
-        <Col span={2}><HeaderHome /></Col>
-        <Col span={2}><HeaderFriendRequest /></Col>
-        <Col span={2}><HeaderMessage /></Col>
-        <Col span={2}><HeaderNotification /></Col>
-    </Row>
+    <div>
+        <Row className="header-color">
+            <Col span={4}><HeaderBrand /></Col>
+            <Col span={6}><HeaderSearch /></Col>
+            <Col span={6}><HeaderProfile /></Col>
+            <Col span={2}><HeaderHome /></Col>
+            <Col span={2}><HeaderFriendRequest /></Col>
+            <Col span={2}><HeaderMessage /></Col>
+            <Col span={2}><HeaderNotification /></Col>
+        </Row>
+    </div>
 
 
       );
 
 export default HeaderContainer;
+/* eslint-enable */

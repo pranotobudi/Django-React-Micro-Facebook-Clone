@@ -8,7 +8,7 @@ const HeaderSearch = () => (
     <div>
         <Search
             placeholder="Search"
-            onSearch={value => console.log(value)}
+            // onSearch={value => console.log(value)}
             style={{ width: 200 }} />
     </div>
       );
