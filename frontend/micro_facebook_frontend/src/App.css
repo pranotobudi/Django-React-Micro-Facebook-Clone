@@ -133,3 +133,31 @@
 .micro-fb-post-header-time{
   color: #616770;
 }
+
+.micro-fb-post-statistics-left{
+  font-size: 16px;
+}
+
+.micro-fb-fb-post-statistics-total-like{
+  margin-left: 5px;
+}
+
+.micro-fb-fb-post-statistics-total-comment{
+  margin-left: 5px;
+}
+
+.micro-fb-fb-post-statistics-comment-text{
+  margin-left: 5px;
+}
+
+.micro-fb-fb-post-statistics-total-share{
+  margin-left: 5px;
+}
+.micro-fb-fb-post-statistics-share-text{
+  margin-left: 5px;
+}
+
+.micro-fb-post-statistics-right{
+  margin-left: 30px;
+  float: right;
+}
