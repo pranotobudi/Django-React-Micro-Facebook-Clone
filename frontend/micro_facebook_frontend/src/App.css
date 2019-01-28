@@ -136,6 +136,7 @@
 
 .micro-fb-post-statistics-left{
   font-size: 16px;
+  margin-left: 10px;
 }
 
 .micro-fb-post-statistics-total-like{
@@ -159,5 +160,31 @@
 
 .micro-fb-post-statistics-right{
   margin-left: 30px;
+  margin-right: 10px;
   float: right;
+}
+
+.micro-fb-post-button{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  font-size: 16px;
+  display: flex;
+  /* justify-content: center; */
+}
+.micro-fb-post-button-left{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.micro-fb-post-button-middle{
+  /* margin-left: auto;
+  margin-right: auto; */
+  flex-grow: 1;
+  text-align: center;
+}
+
+.micro-fb-post-button-right{
+  /* float: right; */
+  flex-grow: 1;
+  text-align: center;
 }
