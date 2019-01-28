@@ -198,3 +198,54 @@
   flex-grow: 1;
   text-align: center;
 }
+
+.micro-fb-post-comment-avatar-wrapper{
+  vertical-align: top;
+}
+
+.micro-fb-post-comment-avatar{
+  margin-left: 10px;
+}
+
+.micro-fb-post-comment-second-wrapper{
+  margin-left: 10px;
+}
+
+.micro-fb-post-comment-name{
+  /* margin-left: 10px; */
+  font-weight: bold;
+  color: #365899;
+}
+
+.micro-fb-post-comment-text{
+  background-color: #F2F3F5;
+  margin-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-radius: 50px;
+}
+
+.micro-fb-post-comment-like-button{
+  color: #365899;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.micro-fb-post-comment-like-button:hover{
+  text-decoration: underline;
+}
+/* .micro-fb-post-comment-like-button a:link, a:visited, a:hover{
+  color: #365899;
+} */
+
+.micro-fb-post-comment-reply-button{
+  color: #365899;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.micro-fb-post-comment-reply-button:hover{
+  text-decoration: underline;
+}
