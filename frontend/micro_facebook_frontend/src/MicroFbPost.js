@@ -5,7 +5,7 @@ import MicroFbPostHeader from './MicroFbPostHeader';
 import MicroFbPostContent from './MicroFbPostContent';
 import MicroFbPostStatistics from './MicroFbPostStatistics';
 import MicroFbPostButton from './MicroFbPostButton';
-import MicroFbPostComment from './MicroFbPostComment';
+import MicroFbPostCommentContainer from './MicroFbPostCommentContainer';
 
 const MicroFbPost = () => (
     <div className="micro-fb-post">
@@ -22,7 +22,7 @@ const MicroFbPost = () => (
             <MicroFbPostButton/>
         </div>
         <div>
-            <MicroFbPostComment/>
+            <MicroFbPostCommentContainer/>
         </div>
     </div>
       );

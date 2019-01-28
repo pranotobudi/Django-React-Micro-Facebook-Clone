@@ -1,15 +1,19 @@
 /*eslint-disable*/
 import React from 'react';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
-import MicroFbPostCommentReply from './MicroFbPostCommentReply'
+
 const MicroFbPostComment = () => (
     <div>
         <div>
-            Post Comment
-            <MicroFbPostCommentReply />
-            <MicroFbPostCommentReply />
-            <MicroFbPostCommentReply />
+            Comment Avatar
         </div>
+        <div>
+            Post Comment Text
+        </div>
+        <div>
+            Post Comment Button
+        </div>
+
     </div>
       );
 
