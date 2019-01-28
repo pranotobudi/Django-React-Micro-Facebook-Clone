@@ -89,3 +89,20 @@
   margin-left: 20px;
 }
 
+.micro-fb-card{
+  background-color: #ffffff;
+  color: black;
+}
+
+.micro-fb-card-title{
+  text-align: center;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid black;
+}
+.micro-fb-card-content-list{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
