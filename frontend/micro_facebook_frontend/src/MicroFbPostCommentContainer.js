@@ -5,14 +5,19 @@ import MicroFbPostComment from './MicroFbPostComment'
 import MicroFbPostCommentInput from './MicroFbPostCommentInput'
 
 const MicroFbPostCommentContainer = () => (
-    <div>
+    <div className="micro-fb-post-comment-container">
         <div><MicroFbPostCommentInput /></div>
-        <div>            
+        <div>
+            <MicroFbPostComment />
+        </div>
+        <div className='micro-fb-post-comment-container-reply'>
+            <MicroFbPostComment />
             <MicroFbPostComment />
         </div>
         <div>
-            Comment Reply
             <MicroFbPostComment />
+        </div>
+        <div className='micro-fb-post-comment-container-reply'>
             <MicroFbPostComment />
             <MicroFbPostComment />
         </div>

@@ -199,26 +199,46 @@
   text-align: center;
 }
 
+.micro-fb-post-comment-container{
+  /* background-color: chocolate; */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.micro-fb-post-comment-container-reply{
+  margin-left: 50px;
+  /* background-color: aqua; */
+}
+.micro-fb-post-comment{
+  /* margin-left: 10px; */
+  display: flex;
+}
+.micro-fb-post-comment-and-comment-button-wrapper{
+  margin-left: 10px;
+}
+
 .micro-fb-post-comment-avatar-wrapper{
   vertical-align: top;
 }
 
 .micro-fb-post-comment-avatar{
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* background-color: #10239e; */
 }
 
-.micro-fb-post-comment-second-wrapper{
-  margin-left: 10px;
+.micro-fb-post-comment-comment-wrapper{
+  /* margin-left: 10px; */
+  background-color: #F2F3F5;
+  border-radius: 20px;
 }
 
 .micro-fb-post-comment-name{
-  /* margin-left: 10px; */
+  margin-right: 10px;
   font-weight: bold;
   color: #365899;
 }
 
 .micro-fb-post-comment-text{
-  background-color: #F2F3F5;
   margin-left: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -231,6 +251,7 @@
   color: #365899;
   margin-top: 0px;
   margin-bottom: 5px;
+  margin-left: 15px;
 }
 .micro-fb-post-comment-like-button:hover{
   text-decoration: underline;
