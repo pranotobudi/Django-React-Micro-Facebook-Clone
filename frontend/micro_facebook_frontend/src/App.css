@@ -120,18 +120,28 @@
 .micro-fb-post-header-avatar{
   /* background-color: aqua; */
   vertical-align:top;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .micro-fb-post-header-text{
   /* background-color: blue; */
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .micro-fb-post-header-name{
   color: #365899;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .micro-fb-post-header-time{
   color: #616770;
+  margin-top: 0;
+}
+
+.micro-fb-post-content-text{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .micro-fb-post-statistics-left{
