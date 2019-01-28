@@ -26,8 +26,8 @@
 .header-container{
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #10239e;
 }
 
@@ -38,6 +38,7 @@
 .header-right-container{
   display: inline-block;
   float: right;
+  /* background-color: aqua; */
 }
 
 .header-brand{
@@ -47,18 +48,27 @@
   display: inline-block;
   margin-left: 10px;
 }
-.header-profile-text{
+.header-profile{
   color: #ffffff;
   font-weight: bold;
   display: inline-block;
-  margin-left: 10px;
+  vertical-align: top;
+  margin-top:2px;
+  height: 100%;
+  /* background-color: #ffffff; */
 }
-
+.header-profile-text{
+  margin-left: 10px;
+  /* background-color: darkgoldenrod; */
+}
 .header-home-text{
   color: #ffffff;
   font-weight: bold;
   display: inline-block;
   margin-left: 20px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  /* background-color: darkgoldenrod; */
 }
 
 .header-friend-request{
