@@ -1,5 +1,7 @@
+/*eslint-disable*/
 import React, { Component } from 'react';
 import MainContainer from './MainContainer';
+import Home from './Home';
 import './App.css';
 
 class App extends Component {
@@ -14,9 +16,14 @@ class App extends Component {
 
     render() {
         return (
-            <MainContainer />
+            /* Newsfeed */
+            // <MainContainer />
+            /* Home */
+            <Home />
         );
     }
 }
 
 export default App;
+
+/*eslint-enable*/

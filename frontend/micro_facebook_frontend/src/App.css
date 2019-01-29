@@ -354,3 +354,25 @@
 .micro-fb-friend-request-item-data-wrapper{
   margin-left: 10px;
 }
+
+
+.home{
+  display: flex;
+}
+
+.home-left-empty{
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #365899;
+}
+
+.home-main-container{
+  flex-grow: 4;
+  flex-basis: 0;
+}
+
+.home-right-empty{
+  flex-grow: 2;
+  flex-basis: 0;
+  background-color: aqua;
+}
