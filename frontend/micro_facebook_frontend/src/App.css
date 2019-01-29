@@ -407,3 +407,30 @@
   color: #ffffff;
 }
 
+.home-menu{
+  background-color: #ffffff;
+  height: 50px;
+  display: flex;
+}
+
+.home-menu-empty{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.home-menu-filled{
+  /*as item*/
+  flex-grow: 3;
+  flex-basis: 0;
+  align-self: center;
+  /*as container*/
+  display: flex;
+}
+.home-menu-button{
+  flex-grow: 1;
+  text-align: center;
+  /* flex-basis: 0; no need this, because we want dynamic size*/
+  border-left-color: #616770;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
