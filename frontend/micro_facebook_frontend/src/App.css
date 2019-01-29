@@ -376,3 +376,34 @@
   flex-basis: 0;
   background-color: aqua;
 }
+
+.home-cover-photo{
+  background-color: #1C1E21;
+  height: 200px;
+  display: flex;
+}
+
+.home-cover-photo-button-wrapper{
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+.home-cover-photo-button-add-cover{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-cover-photo-profpic{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.home-cover-photo-profile-name{
+  flex-grow: 3;
+  flex-basis: 0;
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
