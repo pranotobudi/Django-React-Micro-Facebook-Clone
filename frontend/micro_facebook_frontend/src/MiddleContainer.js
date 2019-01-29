@@ -7,31 +7,9 @@ import MicroFbPost from './MicroFbPost';
 const MiddleContainer = () => (
     <div>
         <MicroFbPost />
-        <Card
-            title="Default size card"
-            extra={<a href="http://localhost">More</a>}
-            style={{ width: 750 }}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-        </Card>
-        <Card
-            title="Default size card"
-            extra={<a href="http://localhost">More</a>}
-            style={{ width: 750 }}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-        </Card>
-        <Card
-            title="Default size card"
-            extra={<a href="http://localhost">More</a>}
-            style={{ width: 750 }}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-        </Card>
-
+        <MicroFbPost />
+        <MicroFbPost />
+        <MicroFbPost />
     </div>
 
       );

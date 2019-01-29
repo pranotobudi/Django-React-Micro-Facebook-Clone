@@ -12,7 +12,9 @@ const RightContainer = () => (
     //     <p>Card content</p>
     //     <p>Card content</p>
     // </Card>
-    <div />
+    <div>
+        Right Container
+    </div>
       );
 
 export default RightContainer;

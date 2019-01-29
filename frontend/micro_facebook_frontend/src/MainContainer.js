@@ -14,20 +14,31 @@ import HeaderContainer from './HeaderContainer';
 const MainContainer = () => (
     <Layout>
         <HeaderContainer />
-        <Row>
+        {/* <Row>
             <Col xs={2} sm={5} md={5} lg={5} xl={5}>
                 Left Container
                 <LeftContainer />
             </Col>
             <Col xs={20} sm={14} md={14} lg={14} xl={14}>
-                Middle Container
                 <MiddleContainer />
             </Col>
             <Col xs={2} sm={5} md={5} lg={5} xl={5}>
                 Right Container
                 <RightContainer />
             </Col>
-        </Row>
+        </Row> */}
+        <div className="main-container">
+            <div className="main-container-left">
+                <LeftContainer />
+            </div>
+            <div className="main-container-middle">
+                <MiddleContainer />
+            </div>
+            <div className="main-container-right">
+                <RightContainer />
+            </div>
+        </div>
+
     </Layout>
 
       );
