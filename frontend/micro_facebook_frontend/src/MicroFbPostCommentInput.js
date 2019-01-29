@@ -6,7 +6,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 const MicroFbPostCommentInput = () => (
     <div>
         <Input
-        placeholder="Enter your comment"
+        placeholder="Write a comment..."
         suffix={<Icon type="caret-right" />}
         style={{
             borderRadius: '10px', backgroundColor: '#ccc',

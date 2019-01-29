@@ -15,7 +15,7 @@ const Home = () => (
         <HeaderContainer />
         <div className="home">
             <div className='home-left-empty'>Home Left Empty</div>
-            <div className='home-main-container'><HomeMainContainer />Home MainContainer</div>
+            <div className='home-main-container'><HomeMainContainer /></div>
             <div className='home-right-empty'>Home RightEmpty</div>
         </div>
 

@@ -4,6 +4,8 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import './index.css';
 import HomeCoverPhoto from './HomeCoverPhoto';
 import HomeMenu from './HomeMenu';
+import MicroFbPost from './MicroFbPost'
+import MicroFbCreatePost from './MicroFbCreatePost'
 
 const HomeMainContainer = () => (
     <div>
@@ -13,10 +15,22 @@ const HomeMainContainer = () => (
         <div>
             <HomeMenu />
         </div>
-        <div>
-            Home Body
-            <div>Home Bio</div>
-            <div>Home Content</div>
+        <div className='home-body'>
+            <div className='home-body-left'>
+                <div>Home Bio Box</div>
+                <div>Home Friend Box</div>
+            </div>
+            <div className='home-body-right'>
+                <div>
+                    <MicroFbCreatePost />
+                </div>
+                <div>
+                    <MicroFbPost />
+                </div>
+                <div>
+                    <MicroFbPost />
+                </div>
+            </div>
         </div>
     </div>
 
