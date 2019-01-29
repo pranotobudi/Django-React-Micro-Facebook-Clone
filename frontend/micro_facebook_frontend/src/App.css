@@ -527,4 +527,26 @@
 .micro-fb-create-post-footer-feeling-icon{
   margin-right: 10px;
 }
-
+.home-bio-container{
+  background-color: #ffffff;
+  padding: 10px;
+}
+.home-bio-container-title{
+  color: #1C1E21;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #EBEDF0;
+  padding-bottom: 20px;
+}
+.home-bio-container-title-icon{
+  margin-right: 10px;
+}
+.home-bio-container-bio{
+  display: flex;
+}
+.home-bio-container-bio-icon{
+  margin-right: 10px;
+}

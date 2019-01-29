@@ -6,7 +6,7 @@ import HomeCoverPhoto from './HomeCoverPhoto';
 import HomeMenu from './HomeMenu';
 import MicroFbPost from './MicroFbPost'
 import MicroFbCreatePost from './MicroFbCreatePost'
-
+import HomeBioBox from './HomeBioBox'
 const HomeMainContainer = () => (
     <div>
         <div>
@@ -17,7 +17,7 @@ const HomeMainContainer = () => (
         </div>
         <div className='home-body'>
             <div className='home-body-left'>
-                <div>Home Bio Box</div>
+                <div>Home Bio Box <HomeBioBox /> </div>
                 <div>Home Friend Box</div>
             </div>
             <div className='home-body-right'>
