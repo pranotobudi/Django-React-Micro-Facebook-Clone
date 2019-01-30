@@ -587,3 +587,11 @@
 .friend-lists-header-text{
   font-size: 20px;
 }
+
+.friend-list{
+  background-color: #ffffff;
+  border-color: #CCD0D5;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}

@@ -9,6 +9,7 @@ import MicroFbCreatePost from './MicroFbCreatePost'
 import HomeBioBox from './HomeBioBox'
 import HomeFriendBox from './HomeFriendBox'
 import FriendListsHeader from './FriendListsHeader'
+import FriendLists from './FriendLists'
 const FriendsMainContainer = () => (
     <div>
         <div>
@@ -19,7 +20,7 @@ const FriendsMainContainer = () => (
         </div>
         <div className='friend-lists-container'>
             <div><FriendListsHeader /></div>
-            <div>Friend Lists</div>
+            <div><FriendLists /> </div>
         </div>
     </div>
 
