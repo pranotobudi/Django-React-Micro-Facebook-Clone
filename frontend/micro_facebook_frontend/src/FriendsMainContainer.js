@@ -8,31 +8,18 @@ import MicroFbPost from './MicroFbPost'
 import MicroFbCreatePost from './MicroFbCreatePost'
 import HomeBioBox from './HomeBioBox'
 import HomeFriendBox from './HomeFriendBox'
-
+import FriendListsHeader from './FriendListsHeader'
 const FriendsMainContainer = () => (
     <div>
         <div>
             <HomeCoverPhoto />
-            </div>
+        </div>
         <div>
             <HomeMenu />
         </div>
-        <div className='home-body'>
-            <div className='home-body-left'>
-                <div><HomeBioBox /> </div>
-                <div><HomeFriendBox /></div>
-            </div>
-            <div className='home-body-right'>
-                <div>
-                    <MicroFbCreatePost />
-                </div>
-                <div>
-                    <MicroFbPost />
-                </div>
-                <div>
-                    <MicroFbPost />
-                </div>
-            </div>
+        <div className='friend-lists-container'>
+            <div><FriendListsHeader /></div>
+            <div>Friend Lists</div>
         </div>
     </div>
 

@@ -1,8 +1,11 @@
-/* eslint-disable */
+/*eslint-disable*/
 import React from 'react';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
-import { Row, Col, Layout } from 'antd';
-import FriendsMainContainer from './HomeMainContainer'
+import { Layout } from 'antd';
+import HomeMainContainer from './HomeMainContainer';
+import FriendsMainContainer from './FriendsMainContainer';
+import HeaderContainer from './HeaderContainer';
+
 import './index.css';
 
 // const {
@@ -13,14 +16,13 @@ const Friends = () => (
     <Layout>
         <HeaderContainer />
         <div className="home">
-            <div className='home-left-empty'></div>
-            <div className='home-main-container'><FriendsMainContainer /></div>
-            <div className='home-right-empty'></div>
+            <div className="home-left-empty" />
+            <div className="home-main-container"><FriendsMainContainer /></div>
+            <div className="home-right-empty" />
         </div>
-
     </Layout>
 
       );
 
 export default Friends;
-/* eslint-enable */
+/*eslint-disable*/
