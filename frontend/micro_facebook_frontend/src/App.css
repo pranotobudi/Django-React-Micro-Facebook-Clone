@@ -530,6 +530,7 @@
 .home-bio-container{
   background-color: #ffffff;
   padding: 10px;
+  margin: 10px;
 }
 .home-bio-container-title{
   color: #1C1E21;
@@ -549,4 +550,19 @@
 }
 .home-bio-container-bio-icon{
   margin-right: 10px;
+}
+
+.home-friend-box-image-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-friend-box-total-friend{
+  color: #90949C;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.home-friend-box-image-item{
+  padding: 1px;
 }

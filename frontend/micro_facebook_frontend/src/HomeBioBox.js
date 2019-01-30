@@ -4,7 +4,7 @@ import { Icon } from 'antd';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import './index.css';
 
-const HomeBioContainer = () => (
+const HomeBioBox = () => (
     <div className='home-bio-container'>
         <div className="home-bio-container-title">
             <div className='home-bio-container-title-icon'>
@@ -52,5 +52,5 @@ const HomeBioContainer = () => (
 
       );
 
-export default HomeBioContainer;
+export default HomeBioBox;
 /* eslint-enable */
