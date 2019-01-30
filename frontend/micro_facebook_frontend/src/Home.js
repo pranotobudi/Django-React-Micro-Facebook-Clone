@@ -18,7 +18,6 @@ const Home = () => (
             <div className='home-main-container'><HomeMainContainer /></div>
             <div className='home-right-empty'></div>
         </div>
-
     </Layout>
 
       );

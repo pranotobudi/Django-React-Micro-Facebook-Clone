@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { Button } from 'antd';
 import './index.css';
@@ -16,8 +17,11 @@ const HomeCoverPhoto = () => (
                 </a>
             </div>
         </div>
-        <div className='home-cover-photo-profile-name'>Pranoto Budi</div>
-
+        <div className='home-cover-photo-profile-name'>
+        <Link to='/pranoto.budi'>
+        Pranoto Budi
+        </Link>
+        </div>
     </div>
 
       );

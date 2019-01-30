@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Icon } from 'antd';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import './index.css';
@@ -14,7 +15,7 @@ const HomeFriendBox = () => (
                 <Icon type="team" />
             </div>
             <div className='home-bio-container-title-text'>
-                Friends
+                <Link to='/pranoto.budi/friends'>Friends</Link>
             </div>
             <div className='home-friend-box-total-friend'>
                 1,170

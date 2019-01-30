@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MainContainer from './MainContainer';
 import Home from './Home';
 import Friends from './Friends'
@@ -17,12 +18,20 @@ class App extends Component {
 
     render() {
         return (
+            <Router>
+                <div>
+                    {/* <div>Bismillah</div> */}
+                    <Route exact path="/" component={MainContainer} />
+                    <Route path="/pranoto.budi/friends" component={Friends} />
+                    <Route path="/pranoto.budi" component={Home} />
+                </div>
+            </Router>
             /* Newsfeed */
             // <MainContainer />
             /* Home */
-            // <Home />
+            //  <Home />
             /*Friends*/
-            <Friends />
+            // <Friends />
         );
     }
 }
