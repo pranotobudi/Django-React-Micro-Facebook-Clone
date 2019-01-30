@@ -15,10 +15,10 @@ import './index.css';
 const Friends = () => (
     <Layout>
         <HeaderContainer />
-        <div className="home">
-            <div className="home-left-empty" />
-            <div className="home-main-container"><FriendsMainContainer /></div>
-            <div className="home-right-empty" />
+        <div className="friend">
+            <div className="friend-left-empty" />
+            <div className="friend-main-container"><FriendsMainContainer /></div>
+            <div className="friend-right-empty" />
         </div>
     </Layout>
 
