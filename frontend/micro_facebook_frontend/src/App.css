@@ -649,3 +649,14 @@
   align-self: center;
 }
 
+.signup-signin-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3B5997;
+}
+
+.signup-signin-header-brand{
+}
+
+.signup-signin-header-login{
+}
