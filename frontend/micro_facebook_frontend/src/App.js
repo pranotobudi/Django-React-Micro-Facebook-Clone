@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MainContainer from './MainContainer';
 import Home from './Home';
 import Friends from './Friends'
+import SignupSignin from './SignupSignin'
 import './App.css';
 
 class App extends Component {
@@ -21,7 +22,8 @@ class App extends Component {
             <Router>
                 <div>
                     {/* <div>Bismillah</div> */}
-                    <Route exact path="/" component={MainContainer} />
+                    <Route exact path="/" component={SignupSignin} />
+                    {/* <Route exact path="/" component={MainContainer} /> */}
                     <Route path="/pranoto.budi/friends" component={Friends} />
                     <Route path="/pranoto.budi" component={Home} />
                 </div>
