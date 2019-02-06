@@ -2,7 +2,7 @@ import React from 'react';
 import imgSrc from './world-map_640.png';
 
 const SignupSigninLeftContent = () => (
-    <div className="signup-signin-left-content">
+    <div>
         <div className="signup-signin-left-content-text">
             Facebook helps you connect and share with the people in your life.
         </div>
