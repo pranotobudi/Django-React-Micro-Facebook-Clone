@@ -687,3 +687,15 @@
   color: #7885B6;
   margin-left: 5px;
 }
+
+.signup-signin-main-content{
+  background-color: #E0E2ED;
+}
+.signup-signin-left-content{
+  margin-right: 20px;
+}
+.signup-signin-left-content-text{
+  color: #3B5997;
+  font-weight: bold;
+  font-size: 30px;
+}

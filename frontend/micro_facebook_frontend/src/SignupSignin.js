@@ -1,13 +1,15 @@
 import React from 'react';
 import SignupSigninHeader from './SignupSigninHeader';
+import SignupSigninLeftContent from './SignupSigninLeftContent';
 
 const SignupSignin = () => (
     <div>
         <div>
             <SignupSigninHeader />
         </div>
-        <div>Signup Signin Main Content
-            <div>Signup Signin Left Content
+        <div className="signup-signin-main-content">Signup Signin Main Content
+            <div>
+                <SignupSigninLeftContent />
             </div>
             <div>Signup Signin Right Content</div>
         </div>
