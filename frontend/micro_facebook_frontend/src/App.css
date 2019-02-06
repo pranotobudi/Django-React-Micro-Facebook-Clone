@@ -653,10 +653,37 @@
   display: flex;
   justify-content: space-between;
   background-color: #3B5997;
+  padding-right: 10px;
 }
 
 .signup-signin-header-brand{
 }
 
 .signup-signin-header-login{
+  display: flex;
+  align-items: center;
+}
+
+.signup-signin-header-login-password{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.signup-signin-header-login-email-text{
+  color: white;
+  font-weight: bold;
+}
+.signup-signin-header-login-password-text{
+  color: white;
+  font-weight: bold;
+}
+
+.signup-signin-header-login-email-text-bottom{
+  color: #7885B6;
+  margin-left: 5px;
+}
+
+.signup-signin-header-login-password-text-bottom{
+  color: #7885B6;
+  margin-left: 5px;
 }
