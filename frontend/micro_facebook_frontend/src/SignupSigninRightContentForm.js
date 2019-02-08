@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { Input, Select, DatePicker } from 'antd';
 
 const Option = Select.Option;
@@ -7,8 +8,8 @@ class SignupSigninRightContentForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstName: '',
-            lastName: '',
+            firstname: '',
+            lastname: '',
             email: '',
             reEmail: '',
             password: '',
@@ -16,8 +17,8 @@ class SignupSigninRightContentForm extends React.Component {
             birthday: '',
         };
 
-        this.onChangeFirstName = this.onChangeFirstName.bind(this);
-        this.onChangeLastName = this.onChangeLastName.bind(this);
+        this.onChangeFirstname = this.onChangeFirstname.bind(this);
+        this.onChangeLastname = this.onChangeLastname.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangeReEmail = this.onChangeReEmail.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
@@ -25,13 +26,13 @@ class SignupSigninRightContentForm extends React.Component {
         this.onChangeBirthday = this.onChangeBirthday.bind(this);
         this.onClickForm = this.onClickForm.bind(this);
     }
-    onChangeFirstName(e) {
-        this.setState({ firstName: e.target.value });
-        console.log(`onChangeFirstName: ${e.target.value}`);
+    onChangeFirstname(e) {
+        this.setState({ firstname: e.target.value });
+        console.log(`onChangeFirstname: ${e.target.value}`);
     }
-    onChangeLastName(e) {
+    onChangeLastname(e) {
         this.setState({ lastName: e.target.value });
-        console.log(`onChangeLastName: ${e.target.value}`);
+        console.log(`onChangeLastname: ${e.target.value}`);
     }
     onChangeEmail(e) {
         this.setState({ email: e.target.value });
@@ -55,13 +56,23 @@ class SignupSigninRightContentForm extends React.Component {
     }
     onClickForm() {
         console.log('onClickForm');
-        console.log(`firstName: ${this.state.firstName}`);
-        console.log(`lastName: ${this.state.lastName}`);
+        console.log(`firstname: ${this.state.firstname}`);
+        console.log(`lastname: ${this.state.lastname}`);
         console.log(`email: ${this.state.email}`);
         console.log(`reEmail: ${this.state.reEmail}`);
         console.log(`password: ${this.state.password}`);
         console.log(`gender: ${this.state.gender}`);
         console.log(`birthday: ${this.state.birthday}`);
+        axios.post('http://127.0.0.1:8000/api/', {
+            firstname: this.state.firstname,
+            lastname: this.state.lastname,
+            email: this.state.email,
+            password: this.state.password,
+            gender: this.state.gender,
+            birthday: this.state.birthday,
+        })
+            .then(res => console.log(res))
+            .catch(err => console.error(err));
     }
     render() {
         return (
@@ -70,14 +81,14 @@ class SignupSigninRightContentForm extends React.Component {
                     <div className="signup-signin-right-content-form-row-text">First name:</div>
                     <div className="signup-signin-right-content-form-row-input">
                         <Input
-                            onChange={this.onChangeFirstName} />
+                            onChange={this.onChangeFirstname} />
                     </div>
                 </div>
                 <div className="signup-signin-right-content-form-row">
                     <div className="signup-signin-right-content-form-row-text">Last name:</div>
                     <div className="signup-signin-right-content-form-row-input">
                         <Input
-                            onChange={this.onChangeLastName} />
+                            onChange={this.onChangeLastname} />
                     </div>
                 </div>
                 <div className="signup-signin-right-content-form-row">
@@ -108,8 +119,8 @@ class SignupSigninRightContentForm extends React.Component {
                             defaultValue="Gender"
                             style={{ width: 120 }}
                             onChange={this.onChangeGender}>
-                            <Option value="men">Men</Option>
-                            <Option value="woman">Woman</Option>
+                            <Option value="Men">Men</Option>
+                            <Option value="Woman">Woman</Option>
                         </Select>
                     </div>
                 </div>
