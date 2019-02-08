@@ -31,7 +31,7 @@ class SignupSigninRightContentForm extends React.Component {
         console.log(`onChangeFirstname: ${e.target.value}`);
     }
     onChangeLastname(e) {
-        this.setState({ lastName: e.target.value });
+        this.setState({ lastname: e.target.value });
         console.log(`onChangeLastname: ${e.target.value}`);
     }
     onChangeEmail(e) {
@@ -73,6 +73,21 @@ class SignupSigninRightContentForm extends React.Component {
         })
             .then(res => console.log(res))
             .catch(err => console.error(err));
+
+        // axios.put('http://127.0.0.1:8000/api/1/', {
+        //     firstname: this.state.firstname,
+        //     lastname: this.state.lastname,
+        //     email: this.state.email,
+        //     password: this.state.password,
+        //     gender: this.state.gender,
+        //     birthday: this.state.birthday,
+        // })
+        //     .then(res => console.log(res))
+        //     .catch(err => console.error(err));
+
+
+        // axios.get('http://127.0.0.1:8000/api/')
+        //     .then(res => console.log(res));
     }
     render() {
         return (
@@ -135,10 +150,11 @@ class SignupSigninRightContentForm extends React.Component {
                     <div className="signup-signin-right-content-form-row-text" />
                     <div className="signup-signin-right-content-form-row-input">
                         <input
+                            className="signup-signin-right-content-form-row-input-submit-btn"
                             type="button"
                             value="Sign Up"
-                            style={{ backgroundColor: '#6BA74E', color: 'white', width: 100 }}
                             onClick={this.onClickForm} />
+                        {/* style={{ backgroundColor: '#6BA74E', color: 'white', width: 100 }} */}
                     </div>
                 </div>
             </div>

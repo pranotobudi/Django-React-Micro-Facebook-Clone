@@ -750,3 +750,13 @@
   flex-basis: 0;
   flex-grow: 2;
 }
+
+.signup-signin-right-content-form-row-input-submit-btn{
+  background-color: #6BA74E;
+  color: white; 
+  width: 100;
+
+}
+.signup-signin-right-content-form-row-input-submit-btn:hover{
+  background-color: green;
+}
