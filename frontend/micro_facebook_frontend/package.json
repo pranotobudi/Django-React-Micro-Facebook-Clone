@@ -6,6 +6,7 @@
         "mdbreact": "^4.9.0",
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
+        "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
         "set-default-browser": "^1.0.1"
     },
