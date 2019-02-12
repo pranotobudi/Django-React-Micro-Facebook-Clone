@@ -14,6 +14,17 @@ class SignupSigninHeader extends React.Component {
             redirect: false,
         };
         this.onClickLogin = this.onClickLogin.bind(this);
+        this.onChangeEmail = this.onChangeEmail.bind(this);
+        this.onChangePassword = this.onChangePassword.bind(this);
+    }
+    onChangeEmail(e) {
+        this.setState({ email: e.target.value });
+        console.log(`onChangeEmail: ${e.target.value}`);
+    }
+
+    onChangePassword(e) {
+        this.setState({ password: e.target.value });
+        console.log(`onChangePassword: ${e.target.value}`);
     }
 
     onClickLogin() {
@@ -30,9 +41,6 @@ class SignupSigninHeader extends React.Component {
                     this.setState({
                         is_authenticated: true,
                         redirect: true });
-                    console.log('IS_AUTHENTICATED:', this.state.is_authenticated);
-                    // axios.get('http://127.0.0.1:9000/')
-                    //     .then(res => console.log(res));
                 }
             })
             .catch(err => console.error(err));
@@ -55,7 +63,7 @@ class SignupSigninHeader extends React.Component {
                     <div className="signup-signin-header-login-email">
                         <div className="signup-signin-header-login-email-text">Email</div>
                         <div>
-                            <Input />
+                            <Input onChange={this.onChangeEmail} />
                         </div>
                         <div>
                             <input type="checkbox" />
@@ -65,7 +73,7 @@ class SignupSigninHeader extends React.Component {
                     <div className="signup-signin-header-login-password">
                         <div className="signup-signin-header-login-password-text">Password</div>
                         <div>
-                            <Input />
+                            <Input onChange={this.onChangePassword} />
                         </div>
                         <div>
                             <input type="checkbox" />
