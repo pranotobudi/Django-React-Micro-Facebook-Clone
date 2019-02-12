@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=!1-wa98o9-tr7!)b(ua31*r14y*c8s9r72el%56@o4nnpznj!'
+SECRET_KEY = '3@u+*d17lm6t=3ox&j!+eg#(c721k%$ja=3%#!m3tsbwkc)y97'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,12 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'user.apps.UserConfig',
+    'users.apps.UsersConfig',
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
-
-
 ]
 
 MIDDLEWARE = [
@@ -127,12 +125,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-        # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+   # Use Django's standard `django.contrib.auth` permissions,
+   # or allow read-only access for unauthenticated users.
+   'DEFAULT_PERMISSION_CLASSES': [
+       'rest_framework.permissions.AllowAny',
+       # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+   ]
 }
-
 CORS_ORIGIN_ALLOW_ALL = True
+
+AUTH_USER_MODEL = 'users.CustomUser' # new
