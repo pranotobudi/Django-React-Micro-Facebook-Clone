@@ -13,7 +13,7 @@ class UserViewSet(viewsets.ModelViewSet):
 class CustomAuthToken(ObtainAuthToken):
     def post(self, request, *args, **kwargs):
         # print(f"request: {request.data}")
-        email = request.data['username']
+        email = request.data['email']
         password =  request.data['password']
         print(f'email: {email}')
         print(f'password: {password}')

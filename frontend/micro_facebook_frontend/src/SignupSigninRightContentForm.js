@@ -77,8 +77,8 @@ class SignupSigninRightContentForm extends React.Component {
         //     .then(res => console.log(res))
         //     .catch(err => console.error(err));
         axios.post('http://127.0.0.1:8000/api-token-auth/', {
-            username: 'a@gmail.com',
-            password: 'a',
+            email: this.state.email,
+            password: this.state.password,
         })
             .then((res) => {
                 // console.log(res);
@@ -86,16 +86,15 @@ class SignupSigninRightContentForm extends React.Component {
                 console.log('USER_ID: ', res.data.user_id);
                 console.log('TOKEN: ', res.data.token);
                 if (res.data.token !== '') {
-                    this.setState({ is_authenticated: true });
+                    this.setState({
+                        is_authenticated: true,
+                        redirect: true });
                     console.log('IS_AUTHENTICATED:', this.state.is_authenticated);
                     // axios.get('http://127.0.0.1:9000/')
                     //     .then(res => console.log(res));
                 }
             })
             .catch(err => console.error(err));
-        this.setState({
-            redirect: true,
-        });
 
 
         // axios.put('http://127.0.0.1:8000/api/1/', {
