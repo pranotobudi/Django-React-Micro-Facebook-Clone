@@ -66,35 +66,35 @@ class SignupSigninRightContentForm extends React.Component {
         console.log(`password: ${this.state.password}`);
         console.log(`gender: ${this.state.gender}`);
         console.log(`birthday: ${this.state.birthday}`);
-        // axios.post('http://127.0.0.1:8000/api/', {
-        //     firstname: this.state.firstname,
-        //     lastname: this.state.lastname,
-        //     email: this.state.email,
-        //     password: this.state.password,
-        //     gender: this.state.gender,
-        //     birthday: this.state.birthday,
-        // })
-        //     .then(res => console.log(res))
-        //     .catch(err => console.error(err));
-        axios.post('http://127.0.0.1:8000/api-token-auth/', {
+        axios.post('http://127.0.0.1:8000/api/', {
+            firstname: this.state.firstname,
+            lastname: this.state.lastname,
             email: this.state.email,
             password: this.state.password,
+            gender: this.state.gender,
+            birthday: this.state.birthday,
         })
-            .then((res) => {
-                // console.log(res);
-                console.log('DATA: ', res.data);
-                console.log('USER_ID: ', res.data.user_id);
-                console.log('TOKEN: ', res.data.token);
-                if (res.data.token !== '') {
-                    this.setState({
-                        is_authenticated: true,
-                        redirect: true });
-                    console.log('IS_AUTHENTICATED:', this.state.is_authenticated);
-                    // axios.get('http://127.0.0.1:9000/')
-                    //     .then(res => console.log(res));
-                }
-            })
+            .then(res => console.log(res))
             .catch(err => console.error(err));
+        // axios.post('http://127.0.0.1:8000/api-token-auth/', {
+        //     email: this.state.email,
+        //     password: this.state.password,
+        // })
+        //     .then((res) => {
+        //         // console.log(res);
+        //         console.log('DATA: ', res.data);
+        //         console.log('USER_ID: ', res.data.user_id);
+        //         console.log('TOKEN: ', res.data.token);
+        //         if (res.data.token !== '') {
+        //             this.setState({
+        //                 is_authenticated: true,
+        //                 redirect: true });
+        //             console.log('IS_AUTHENTICATED:', this.state.is_authenticated);
+        //             // axios.get('http://127.0.0.1:9000/')
+        //             //     .then(res => console.log(res));
+        //         }
+        //     })
+        //     .catch(err => console.error(err));
 
 
         // axios.put('http://127.0.0.1:8000/api/1/', {
@@ -141,6 +141,7 @@ class SignupSigninRightContentForm extends React.Component {
                     <div className="signup-signin-right-content-form-row-text">Your email:</div>
                     <div className="signup-signin-right-content-form-row-input">
                         <Input
+                            type="email"
                             onChange={this.onChangeEmail} />
                     </div>
                 </div>
@@ -180,7 +181,7 @@ class SignupSigninRightContentForm extends React.Component {
                 <div className="signup-signin-right-content-form-row">
                     <div className="signup-signin-right-content-form-row-text" />
                     <div className="signup-signin-right-content-form-row-input">
-                        {this.renderRedirect()}
+                        {/* {this.renderRedirect()} */}
                         <input
                             className="signup-signin-right-content-form-row-input-submit-btn"
                             type="button"
